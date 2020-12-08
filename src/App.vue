@@ -1,31 +1,44 @@
 <template>
   <div id="app">
-    <div class="ui inverted segment navbar">
-      <div class="ui center aligned container">
-        <div class="ul large secondary inverted pointing menu compact">
-          <router-link to="/" exact class="item">
-            <i class="comment outline icon"></i>booStudio
-          </router-link>
 
-          <router-link to="/careers" exact class="item">
-            <i class="plus circle icon"></i>Careers
-          </router-link>
+      <div class="box-area">
+        <header>
+          <div class="wrapper">
+            <div class="logo">
+              <router-link to="/" exact class="item">
+               booStudio
+             </router-link>
+            </div>
+            <nav>
+              <router-link to="/careers" exact class="item">
+              Careers
+            </router-link>
 
-          <router-link to="/signup" exact class="item">
-            <i class="graduation cap icon"></i>BooHUB
-          </router-link>
+            <router-link to="/signup" exact class="item">
+              BooHUB
+                </router-link>
+            </nav>
+          </div>
+        </header>
+
+
+        <div class="footer">
+          <div class="inner-footer">
+
+          </div>
         </div>
 
-      </div>
-    </div>
 
- <div class="ui text container">
+      </div>
+
+
+
     <div class="ui one column grid">
       <div class="column">
         <router-view/>
       </div>
     </div>
- </div>
+
 
   </div>
 </template>
@@ -40,7 +53,44 @@ export default{
 #app > div.navbar{
   margin-bottom: 1.5em;
 }
-div.label{
-  width: 120px;
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
 }
+body{
+  text-align: center;
+}
+.wrapper{
+
+}
+header{
+  background: #cd551c;
+  height: 100px;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+
+}
+.logo{
+  width: 30%;
+  float: left;
+  line-height: 100px;
+  color: #8c8c8c;
+  font-size: 30px;
+  font-family: bignoodletitling;
+  letter-spacing: 5px;
+}
+nav{
+  float: right;
+  line-height: 100px;
+  text-decoration: none;
+  font-family: bignoodletitling;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #8c8c8c;
+}
+
 </style>
