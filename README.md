@@ -20,5 +20,6 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Feature
+Vue routes are implemented for Login and home.
+Simple css for showing the base structure of the website.
