@@ -20,24 +20,16 @@
             </nav>
           </div>
         </header>
-
-
         <div class="footer">
           <div class="inner-footer">
-
           </div>
         </div>
-
-
       </div>
-
-
-
-    <div class="ui one column grid">
-      <div class="column">
         <router-view/>
-      </div>
-    </div>
+
+
+
+
 
 
   </div>
@@ -92,5 +84,6 @@ nav{
   margin: 0 10px;
   color: #8c8c8c;
 }
+
 
 </style>
